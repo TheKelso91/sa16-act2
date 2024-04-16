@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root 'pages#home'
+  get 'home', to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'my_work', to: 'pages#my_work'
   get 'contact', to: 'pages#contact'
